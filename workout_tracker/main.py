@@ -5,6 +5,9 @@ import datetime
 API_KEYS = ''
 APP_ID = ''
 
+# Sheety api auth
+SHEETY_AUTH = ''
+
 # Fill personal details
 WEIGHT = 60.5
 HEIGHT = 170
@@ -42,7 +45,7 @@ for i in new_data1:
                     'calories':new_data['nf_calories']}
     }
     authorization={
-        'Authorization':'Basic dmFjb20xMzoxMjM0NTY='
+        'Authorization':SHEETY_AUTH
     }
     a = requests.post(url=DAT_ADDITION,json=info, headers = authorization)
     print(a.status_code)
