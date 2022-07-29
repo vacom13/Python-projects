@@ -2,7 +2,7 @@ from turtle import Turtle
 START_DIR= 45 # Right half
 
 # Ball Settings
-BALL_SPEED = 20
+BALL_SPEED = 25
 ANIMATION_SPEED = 10
 BALL_COLOR = 'white'
 
